@@ -1,9 +1,10 @@
 #Se tiene información sobre las calificaciones de 6 exámenes de un grupo de 30 alumnos.
+#Pongo dos alumnos por efectos de practicidad para probarlo ya que 30 alumnos me llevaria mucho tiempo.
 class prueba:
     def promedio_calificaion(self):
         i,j=1,1
         numeroexamenes= 6
-        numerosalumnos = 2
+        numerosalumnos = 4
         #numerosalumnos= int(input("Escriba el numero de alumnos: "))
         sum =0
         mayor = 1
@@ -21,7 +22,7 @@ class prueba:
                     print("-----------------")
         for j in range(numerosalumnos):
             for i in range(numeroexamenes):
-                prom = sum / (numeroexamenes*2)
+                prom = sum / (numeroexamenes*numerosalumnos)
         print("Promedio Examen: ", prom)
 
 
